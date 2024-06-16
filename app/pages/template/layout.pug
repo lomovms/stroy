@@ -1,0 +1,39 @@
+block variables
+include ../helpers/mixins
+include ../../components/menu/menu
+include ../../components/header/header
+include ../../components/footer/footer
+include ../../components/popup/popup
+
+doctype html
+html(lang="RU")
+	head
+		meta(charset="utf-8")
+		title #{title}
+		meta(content="" name="author")
+		meta(content="" name="description")
+		meta(content="" name="keywords")
+		meta(content="width=device-width, initial-scale=1" name="viewport")
+		meta(content="ie=edge" http-equiv="x-ua-compatible")
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+		//- favicon block start
+		//- favicon block end
+
+	block head
+
+	body
+		.page
+			+header({
+				menu: menuHeader
+			})
+
+			main.main
+				block content
+
+			//- block footer
+			+footer({})
+
+
+			//- block popup
+			+popup({})

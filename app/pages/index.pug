@@ -1,0 +1,340 @@
+extends template/layout
+//- include ../components/menu/menu
+
+block variables
+	- var title = 'Дом'
+
+block content
+	section.section1
+		.main-bg
+			.main-bg__inner
+		.text-group
+			.text-group__content
+				.text-group__title Дома и бани под ключ
+					br
+					| от 15 дней
+				.text-group__subtitle в каркасном и брусовом исполнении
+				.text-group__button
+					a(href="#").button
+						.button__text оставить заявку на расчет
+	.container
+		section.section2
+			.elem-title
+				h2.h2 Хиты продаж
+			.hit__tabs(class="tabs" data-tabs="")
+				ul.hit__tabs.tabs__head.grid(class=`tabs__head` data-tabs-head="")
+					li.hit__item.grid__item.grid__item-6
+						a(href="#" class=`tabs__link`).hit__link.active Дома
+					li.hit__item.grid__item.grid__item-6
+						a.hit__link Бани
+				.tabs__body
+					.hit__carts.tabs__item.active.grid
+						.grid__item-6
+							.hit__cart
+								.hit__img
+									img(src="./assets/images/required/houses/home1.jpg", alt="")
+									.overlay
+								.hit__text
+									h3.hit__h3 ДК-63
+									.hit__desc Двухэтажный дом ДК-63 является нашим хитом.В доме два этажа. На первом расположены гостиная, кухня и ванная комната. На втором — спальня и детская комнат. Планировку можно менять по вашим предпочтениям перед началом строительства.
+									ul.hit__tag
+										li.hit__tag-item Этажей:
+											span  1+М
+										li.hit__tag-item Размеры:
+											span  8x7 м
+										li.hit__tag-item общая:
+											span  83.7м
+										li.hit__tag-item Спален:
+											span  4
+									.hit__price
+										span от
+										|  1 550 000 ₽
+								button.button-more
+						.hit__wrapper.grid__item-6
+							.hit__cart
+								.hit__img
+									img(src="./assets/images/required/houses/home2.jpg", alt="")
+									.overlay
+								.hit__text
+									h3.hit__h3 ДК-69
+								button.button-more
+							.hit__cart
+								.hit__img
+									img(src="./assets/images/required/houses/home3.jpg", alt="")
+									.overlay
+								.hit__text
+									h3.hit__h3 ДК-67
+								button.button-more
+							.hit__cart
+								.hit__img
+									img(src="./assets/images/required/houses/home4.jpg", alt="")
+									.overlay
+								.hit__text
+									h3.hit__h3 ДК-65
+								button.button-more
+					.hit__carts.tabs__item
+						.hit__cart
+							.hit__img
+								img(src="./assets/images/required/houses/home1.jpg", alt="")
+							.hit__text
+								h3.hit__h3 ДК-63
+								.hit__desc Двухэтажный дом ДК-63 является нашим хитом.В доме два этажа. На первом расположены гостиная, кухня и ванная комната. На втором — спальня и детская комнат. Планировку можно менять по вашим предпочтениям перед началом строительства.
+								ul.hit__list
+									li.hit__list Этажей:
+										span  1+М
+									li.hit__list Размеры:
+										span  8x7 м
+									li.hit__list S общая:
+										span  83.7м
+									li.hit__list Спален:
+										span  4
+								.hit__price
+									span от
+									|  1 550 000 ₽
+							button.button-more
+						.hit__wrapper.grid
+							.hit__cart.grid__item.grid__item-6
+								.hit__img
+									img(src="./assets/images/required/houses/home2.jpg", alt="")
+								.hit__text
+									h3.hit__h3 ДК-63
+									.hit__desc Двухэтажный дом ДК-63 является нашим хитом.В доме два этажа. На первом расположены гостиная, кухня и ванная комната. На втором — спальня и детская комнат. Планировку можно менять по вашим предпочтениям перед началом строительства.
+									ul.hit__list
+										li.hit__list Этажей:
+											span  1+М
+										li.hit__list Размеры:
+											span  8x7 м
+										li.hit__list S общая:
+											span  83.7м
+										li.hit__list Спален:
+											span  4
+									.hit__price
+										span от
+										|  1 550 000 ₽
+								button.button-more
+							.hit__cart
+								.hit__img
+									img(src="./assets/images/required/houses/home3.jpg", alt="")
+								.hit__text
+									h3.hit__h3 ДК-63
+									.hit__desc Двухэтажный дом ДК-63 является нашим хитом.В доме два этажа. На первом расположены гостиная, кухня и ванная комната. На втором — спальня и детская комнат. Планировку можно менять по вашим предпочтениям перед началом строительства.
+									ul.hit__list
+										li.hit__list Этажей:
+											span  1+М
+										li.hit__list Размеры:
+											span  8x7 м
+										li.hit__list S общая:
+											span  83.7м
+										li.hit__list Спален:
+											span  4
+									.hit__price
+										span от
+										|  1 550 000 ₽
+								button.button-more
+							.hit__cart.grid__item.grid__item-6
+								.hit__img
+									img(src="./assets/images/required/houses/home4.jpg", alt="")
+								.hit__text
+									h3.hit__h3 ДК-63
+									.hit__desc Двухэтажный дом ДК-63 является нашим хитом.В доме два этажа. На первом расположены гостиная, кухня и ванная комната. На втором — спальня и детская комнат. Планировку можно менять по вашим предпочтениям перед началом строительства.
+									ul.hit__list
+										li.hit__list Этажей:
+											span  1+М
+										li.hit__list Размеры:
+											span  8x7 м
+										li.hit__list S общая:
+											span  83.7м
+										li.hit__list Спален:
+											span  4
+									.hit__price
+										span от
+										|  1 550 000 ₽
+								button.button-more
+		section.section3
+			.advantages
+				.advantages__list
+					.advantages__item
+						.advantages__img
+							img(src="./assets/images/required/advantages/img-1.png", alt="")
+						.advantages__text Более 10 лет
+							br
+							| в домостроении
+					.advantages__item
+						.advantages__img
+							img(src="./assets/images/required/advantages/img-2.png", alt="")
+						.advantages__text Профессиональные
+							br
+							| строители
+					.advantages__item
+						.advantages__img
+							img(src="./assets/images/required/advantages/img-3.png", alt="")
+						.advantages__text Гарантия
+								br
+								| качества 5 лет
+					.advantages__item
+						.advantages__img
+							img(src="./assets/images/required/advantages/img-4.png", alt="")
+						.advantages__text Индивидуальный
+								br
+								|	подход к заказчику
+					.advantages__item
+						.advantages__img
+							img(src="./assets/images/required/advantages/img-5.png", alt="")
+						.advantages__text Строим без
+								br
+								| предоплат
+					.advantages__item
+						.advantages__img
+							img(src="./assets/images/required/advantages/img-6.png", alt="")
+						.advantages__text Материал
+								br
+								| камерной сушки
+					.advantages__item
+						.advantages__img
+							img(src="./assets/images/required/advantages/img-7.png", alt="")
+						.advantages__text Работаем
+								br
+								| с материнским
+								br
+								|капиталом
+					.advantages__item
+						.advantages__img
+							img(src="./assets/images/required/advantages/img-8.png", alt="")
+						.advantages__text Строим
+								br
+								| по всей
+								br
+								| России
+		section.section4
+			.info
+				.info__img
+					img(src="./assets/images/required/metal.jpg", alt="")
+				.info__wrapper
+					i.icon.info__icon
+						svg.icon
+							use(xlink:href="/assets/images/required/sprite.svg#home-s")
+					h3.info__title Металлочерепица и металлическая дверь в подарок при заказе в Июне
+					i.icon.info__icon
+						svg.icon
+							use(xlink:href="/assets/images/required/sprite.svg#arrow-top")
+		section.section5
+			.gallery
+				.gallery__img
+					img(src="./assets/images/required/gall.png", alt="")
+				.gallery__text
+					.elem-title.elem-title
+						h2.h2.gallery__title фото
+							br
+							| отчеты
+					a(href="#").button смотреть все
+		section.section6
+			.elem-title
+				h2.h2 Схема работы
+			.steps
+				.steps__top
+					ul.steps__list
+						li.steps__item Шаг 1
+						li.steps__item Шаг 2
+						li.steps__item Шаг 3
+						li.steps__item Шаг 4
+						li.steps__item Шаг 5
+						li.steps__item Шаг 6
+						li.steps__item Шаг 7
+						li.steps__item Шаг 8
+					ul.steps__images
+						li.steps__images-item
+							.steps__img
+								img(src="./assets/images/required/step1.png", alt="")
+						li.steps__images-item
+							.steps__img
+								img(src="./assets/images/required/step2.png", alt="")
+						li.steps__images-item
+							.steps__img
+								img(src="./assets/images/required/step3.png", alt="")
+				ul.steps__bottom
+					li.steps__bottom-item Расчёт проекта
+					li.steps__bottom-item Предложение и договор
+					li.steps__bottom-item Комплектуем материалы
+					li.steps__bottom-item Доставляем материалы
+					li.steps__bottom-item Оформляем документы
+					li.steps__bottom-item Выполням строительство
+					li.steps__bottom-item Сдаем объект
+					li.steps__bottom-item Оставлись вопросы?
+						a(href="#").steps__link Задать вопрос
+		section.section7
+			.info
+				.info__img
+					img(src="./assets/images/required/work.jpg", alt="")
+				.info__wrapper
+					i.icon.info__icon
+						svg.icon
+							use(xlink:href="/assets/images/required/sprite.svg#home-s")
+					h3.info__title Металлочерепица и металлическая дверь в подарок при заказе в Июне
+					i.icon.info__icon
+						svg.icon
+							use(xlink:href="/assets/images/required/sprite.svg#arrow-top")
+			.info
+				.info__img
+					img(src="./assets/images/required/arctic.jpg", alt="")
+				.info__wrapper
+					i.icon.info__icon
+						svg.icon
+							use(xlink:href="/assets/images/required/sprite.svg#home-s")
+					h3.info__title Металлочерепица и металлическая дверь в подарок при заказе в Июне
+					i.icon.info__icon
+						svg.icon
+							use(xlink:href="/assets/images/required/sprite.svg#arrow-top")
+		section.section8
+			.tehno
+				.tehno__row
+					h3.tehno__title Строительные технологии
+					.tehno__img
+						img(src="./assets/images/required/home-big.png", alt="")
+						.tehno__bubles
+							a(data-mfp-src="#buble-more" data-popup).tehno__buble
+								.tehno__buble-img
+									img(src="./assets/images/required/bullet.svg", alt="")
+								.tehno__buble-text Текс для таба
+							a(href="#").tehno__buble
+								.tehno__buble-img
+									img(src="./assets/images/required/bullet.svg", alt="")
+								.tehno__buble-text Текс для таба
+							a(href="#").tehno__buble
+								.tehno__buble-img
+									img(src="./assets/images/required/bullet.svg", alt="")
+								.tehno__buble-text Текс для таба
+							a(href="#").tehno__buble
+								.tehno__buble-img
+									img(src="./assets/images/required/bullet.svg", alt="")
+								.tehno__buble-text Текс для таба
+							a(href="#").tehno__buble
+								.tehno__buble-img
+									img(src="./assets/images/required/bullet.svg", alt="")
+								.tehno__buble-text Текс для таба
+		section.section9
+			.question
+				.question__person
+					.question__name
+						p Ольга
+							br
+							| Фролова
+						span Менеджер
+					.question__icon
+						img(src="./assets/images/required/home-b.svg", alt="")
+					.question__img
+						img(src="./assets/images/required/girl.png", alt="")
+				.question__text
+					.question__title Есть вопросы?
+					.question__desc Закажите обратный звонок, мы перезвоним вам и совершенно бесплатно проконсультируем вас по любым вопросам
+					form(action="").question__form
+						label(for="question1").question__item
+							.question__label Введите имя
+							input(type="text" placeholder="Например Дмитрий")
+						label(for="question2").question__item
+							.question__label Введите номер телефона
+							input#phone(type="phone" placeholder="+7 (900) 000-00-00")
+						a(data-mfp-src="#create-request" data-popup).button Отправить
+						.question__conf Нажимая на кнопку, вы даете
+							br
+							| согласие на обработку персональных данных в соответствии с
+							a(href="#").question__link «Политикой конфиденциальности»

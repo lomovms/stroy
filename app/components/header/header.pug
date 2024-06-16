@@ -1,0 +1,39 @@
+mixin header(data)
+	//- модификатор
+	+modif('header', data.mod)
+
+	//- префикс
+	+prefix('header', data.prefix)
+
+	//- атрибуты
+	- attr = data.attr || ''
+
+	div(class=`header${pr}${mod}`)&attributes(attr)
+		.container
+			.header__container.grid
+				.header__menu.grid__item.grid__item-5
+					ul.header__menu-list
+						li.header__menu-item
+							a.header__menu-link(href="#") Проекты
+						li.header__menu-item
+							a.header__menu-link(href="#") Услуги
+						li.header__menu-item
+							a.header__menu-link(href="#") Наши работы
+						li.header__menu-item
+							a.header__menu-link(href="#") Клиенту
+						li.header__menu-item
+							a.header__menu-link(href="#") Контакты
+				.header__logo.grid__item.grid__item-2
+					a.header__logo-link(href="#")
+						svg
+							use(xlink:href="/assets/images/required/sprite.svg#logo")
+				.header__contact.grid__item.grid__item-5
+					p.header__contact-phone 8 (800) 222-01-53
+					p.header__contact-email
+						a.header__contact-email-link(href="mailto:stroydom53@yahoo.com") stroydom53@yahoo.com
+					a(href="#").button--wh
+						.button--wh__icon
+							svg.icon
+								use(xlink:href="/assets/images/required/sprite.svg#wa-g")
+						.button--wh__text.wh__text WhatsApp
+						.button--wh__ellipse.wh__ellipse

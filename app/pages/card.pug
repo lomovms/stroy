@@ -1,0 +1,119 @@
+extends template/layout
+//- include ../components/menu/menu
+
+block variables
+	- var title = 'Дом'
+
+block content
+	.container
+		section.section1
+				.breadcrumbs
+					a(href="#") Главная
+						span /
+					a(href="#") Каталог
+						span /
+					a(href="#") Каркасные дома
+						span /
+					span ДК-69
+
+				.product-card
+					h1.product-title Каркасный дом 6x8 ДК-69
+
+					.product-content
+						.product-content__left
+							//- .main-slider
+							//- 	.swiper-wrapper
+							//- 		.swiper-slide
+							//- 			img(src="assets/images/required/house1.png", alt="House Image 1")
+							//- 		.swiper-slide
+							//- 			img(src="assets/images/required/house2.png", alt="House Image 2")
+							//- 		.swiper-slide
+							//- 			img(src="assets/images/required/plan1.png", alt="Plan 1")
+							//- 		.swiper-slide
+							//- 			img(src="assets/images/required/plan2.png", alt="Plan 2")
+							//- .swiper-button-next
+							//- .swiper-button-prev
+
+							//- .thumbs-slider
+							//- 	.swiper-wrapper
+							//- 		.swiper-slide
+							//- 			img(src="assets/images/required/house1.png", alt="House Thumbnail 1")
+							//- 		.swiper-slide
+							//- 			img(src="assets/images/required/house2.png", alt="House Thumbnail 2")
+							//- 		.swiper-slide
+							//- 			img(src="assets/images/required/plan1.png", alt="Plan Thumbnail 1")
+							//- 		.swiper-slide
+							//- 			img(src="assets/images/required/plan2.png", alt="Plan Thumbnail 2")
+							.swiper.mySwiper2
+								.swiper-wrapper
+									each img in ["nature-1.jpg", "nature-2.jpg", "nature-3.jpg", "nature-4.jpg", "nature-5.jpg", "nature-6.jpg", "nature-7.jpg", "nature-8.jpg", "nature-9.jpg", "nature-10.jpg"]
+										.swiper-slide
+											img(src=`https://swiperjs.com/demos/images/${img}`)
+								.swiper-button-next
+								.swiper-button-prev
+							.swiper.mySwiper(thumbsSlider="")
+								.swiper-wrapper
+									each img in ["nature-1.jpg", "nature-2.jpg", "nature-3.jpg", "nature-4.jpg", "nature-5.jpg", "nature-6.jpg", "nature-7.jpg", "nature-8.jpg", "nature-9.jpg", "nature-10.jpg"]
+										.swiper-slide
+											img(src=`https://swiperjs.com/demos/images/${img}`)
+
+
+						.product-content__right
+							.product-options
+								.product-option
+									span Выберите технологию
+									select
+										option(value="tech1") Технология 1
+										option(value="tech2") Технология 2
+								.product-option
+									span Выберите вариант отделки
+									select
+										option(value="finish1") Отделка 1
+										option(value="finish2") Отделка 2
+								.product-option
+									span Выберите толщину стен
+									select
+										option(value="wall1") Толщина 1
+										option(value="wall2") Толщина 2
+
+							.product-info
+								.info-item
+									span Общая площадь
+									span 175м²
+								.info-item
+									span Размеры дома
+									span 11x8
+								.info-item
+									span Количество комнат
+									span 3
+								.info-item
+									span Фундамент
+									span не входит в стоимость
+								.info-item
+									span Кровля
+									span металлочерепица
+								.info-item
+									span Материал стен
+									span каркасные
+
+							.phone-input
+								input(type="tel", placeholder="+7 (900) 000-00-00")
+								button Перезвонить
+
+							.price
+								h2 1 474 000 ₽
+
+							.dimensions
+								.dimension
+									span Размер дома
+									span 6x8
+								.dimension
+									span Площадь дома
+									span 65м²
+								.dimension
+									span Срок строительства
+									span 45дн.
+								.dimension
+									span Номер проекта
+									span 002КДПК200
+

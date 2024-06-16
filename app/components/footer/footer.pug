@@ -1,0 +1,112 @@
+mixin footer(data)
+	//- модификатор
+	+modif('footer', data.mod)
+
+	//- префикс
+	+prefix('footer', data.prefix)
+
+	//- атрибуты
+	- attr = data.attr || ''
+
+	div(class=`footer${pr}${mod}`)&attributes(attr)
+		.footer__col
+			a.header__logo-link(href="#")
+				svg
+					use(xlink:href="/assets/images/required/sprite.svg#logo")
+			.footer__desc Строительная компания «53СТРОЙ» предлагает свои услуги по строительству частных домов из профилированного бруса под ключ или под усадку, постройку каркасных жилых коттеджей для постоянного проживания, возведению деревянных бань из бруса с чистовой отделкой. 
+			ul.footer__menu
+				.footer__item
+					a(href="#").footer__link Проекты
+				.footer__item
+					a(href="#").footer__link Наши работы
+				.footer__item
+					a(href="#").footer__link Услуги
+				.footer__item
+					a(href="#").footer__link Клиенту
+				.footer__item
+					a(href="#").footer__link Контакты
+			ul.footer__menu.footer__menu--doc
+				.footer__item
+					a(href="#").footer__link документация
+				.footer__item
+					a(href="#").footer__link политика конфиденциальности
+		.footer__col
+			.footer__wrapper
+				.footer__title Адрес:
+				.footer__text Москва п. Сосенское, пос. Коммунарка, ул. Потаповская Роща, д. 3, корп. 1, пом. 62П, офис 11
+				.footer__text.footer__text--alt Время работы: пн-пт 9:00 — 18:00, перерыв 12:00-13:00, сб 10:00-15:00
+				.footer__tel 8 (800) 250-45-47
+				.footer__title Почта
+				.footer__mail msk@53stroy.ru
+			a(href="#").footer__shild
+				.footer__shild__img
+					img(src="./assets/images/required/shild.svg", alt="")
+				span Разработка сайта
+		.footer__col
+			.footer__text Юр.лицо: ООО «СТРОЙМОНТАЖ»
+				br
+				| ИНН: 7810928576
+				br
+				| ОГРН: 1217800143153
+			ul.footer__social
+				li.footer__social-item
+					a(href="#").footer__social-link
+						svg
+							use(xlink:href="/assets/images/required/sprite.svg#yt")
+				li.footer__social-item
+					a(href="#").footer__social-link
+						svg
+							use(xlink:href="/assets/images/required/sprite.svg#wa")
+				li.footer__social-item
+					a(href="#").footer__social-link
+						svg
+							use(xlink:href="/assets/images/required/sprite.svg#tg")
+				li.footer__social-item
+					a(href="#").footer__social-link
+						svg
+							use(xlink:href="/assets/images/required/sprite.svg#vk")
+			.footer__copy
+				p 2023 © стройдом53
+				p сайт не является публичной офертой
+		#buble-more.popup.popup--more.mfp-hide
+			.popup-header
+				button.popup-close(data-mfp-close="") ×
+			.popup-body
+				.popup__img
+					img(src="assets/images/required/pie.png" alt="пирог")
+					.popup__wrapper
+						.circle
+							.circle__outer
+								.circle__inner
+							.circle__text Утеплитель
+						.circle
+							.circle__outer
+								.circle__inner
+							.circle__text Утеплитель
+						.circle
+							.circle__outer
+								.circle__inner
+							.circle__text Утеплитель
+						.circle
+							.circle__outer
+								.circle__inner
+							.circle__text Утеплитель
+						.circle
+							.circle__outer
+								.circle__inner
+							.circle__text Утеплитель
+				h3 Пирог стены каркасного дома
+		#create-request.popup.popup--pic.mfp-hide
+			.popup-header
+				h2 Оставить
+					br
+					| заявку
+				button.popup-close(data-mfp-close="") ×
+			.popup-body
+				.popup__girl
+					img(src="./assets/images/required/girl.png", alt="")
+				form(action="").question__form
+					label(for="question2").question__item
+						.question__label Введите номер телефона
+						input#phone2(type="phone" placeholder="+7 (900) 000-00-00")
+					a(href="#").button оставить заявку
